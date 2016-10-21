@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<title>Home Page</title>
+		<meta charset="utf-8"/>
+		<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+		<meta content="width=device-width, initial-scale=1" name="viewport"/>
+		<!-- <meta content="" name="description"/>
+		<meta content="" name="keywords"/> -->
+		<link href="assets/images/favico.png" rel="canonical"/>
+		<meta content="en_US" property="og:locale"/>
+		<!-- <meta content="" property="og:type"/>
+		<meta content="" property="og:title"/>
+		<meta content="" property="og:description"/>
+		<meta content="" property="og:url"/>
+		<meta content="" property="og:site_name"/> -->
+		<link href="assets/images/favico.png" rel="apple-touch-icon" type="image/png"/>
+		<link href="assets/images/favico.png" rel="icon" type="image/png"/>
+		<!-- build:css assets/css/styles.css -->
+			<!-- START default external resources -->
+			<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+			<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+		<!-- endbuild -->
+		<!-- build:js assets/js/scripts.js -->
+			<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script> <!-- Jquery before Angular to avoid jqlite nosel error -->
+			<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+			<script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+			<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+			<!-- END default external resources -->
+			<!-- START Common modules -->
+			<script type="text/javascript" src="common/settings.js"></script>
+			<script type="text/javascript" src="common/modules/common.directives.js"></script>
+			<script type="text/javascript" src="common/modules/common.module.js"></script>
+			<!-- END Common modules -->
+			<!-- START sample modules -->
+			<script type="text/javascript" src="components/sample/modules/controllers/sample.controller.js"></script>
+			<script type="text/javascript" src="components/sample/modules/sample.config.js"></script>
+			<script type="text/javascript" src="components/sample/modules/sample.directives.js"></script>
+			<script type="text/javascript" src="components/sample/modules/sample.module.js"></script>
+			<!-- END sample modules -->
+
+			<script type="text/javascript" src="app.module.js"></script>
+		<!-- endbuild -->
+	</head>
+	<body>
+		<div ng-view></div>
+	</body>
+</html>
